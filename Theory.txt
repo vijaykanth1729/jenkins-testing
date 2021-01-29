@@ -1,0 +1,17 @@
+Jenkins:
+--------
+Developer------->Git(VCS)--->Jenkins--->Test, build,deploy, and run-->
+Every operation we perform on Jenkins is called Job.
+
+
+Jenkins will create an Image and push it to Registry (docker hub/ECR)
+But jenkins has a credentails manager system, which requires you to set up
+your credentails of third party tools.
+1)Jenkins requires Java to be installed on ur system.
+2)Go and download jenkins..
+once you download it you get .war file..
+then run the command like below
+eg: jenkins -jar jenkins.war  (For running Jenkins..)
+----------------
+docker pull jenkins
+docker run -p 8080:8080 -d  --name jenkins_master jenkins 
