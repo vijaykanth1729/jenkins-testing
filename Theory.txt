@@ -15,3 +15,13 @@ eg: jenkins -jar jenkins.war  (For running Jenkins..)
 ----------------
 docker pull jenkins
 docker run -p 8080:8080 -d  --name jenkins_master jenkins 
+
+
+
+Automated deployements:
+--------------------------
+Build--->Deploy--->Test----->Release
+
+
+
+developer---->VCS(GitHUb)------<Jenkins>----->Build_process---->Deploy(TestEnv, StableEnv)---->(Functional testing, regression testing)--->Release(Prod)
