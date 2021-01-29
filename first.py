@@ -1,4 +1,4 @@
-print("hello world")
+print("hello world updated!")
 for i in range(1,100):
     print(i**2)
 
